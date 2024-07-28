@@ -1,0 +1,61 @@
+* {
+    border-style: dashed;
+    border-color: red;
+}
+.hlist {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lang {
+    display: flex;
+    justify-content: right;
+}
+
+.lswitch {
+    margin-left: 10px;
+}
+
+#ar:hover {
+    background-image: url('mflag.jpg');
+}
+
+#en:hover {
+    background-image: url('aflag.png');
+}
+
+#fr:hover {
+    background-image: url('fflag.png');
+}
+
+.scontain {
+    display: flex;
+    justify-content: center;
+}
+
+.lbody {
+    display: flex;
+    justify-content: center;
+}
+
+/*Ancillary Pages*/
+.bodysection {
+    display: flex;
+    height: 700px;
+}
+
+.rsection {
+    margin-left: 350px;
+    height: 200px;
+}
+
+.scontain1 {
+    display: flex;
+    justify-content: center;
+}
+
+.wtable {
+    display: flex;
+    justify-content: center;
+}
