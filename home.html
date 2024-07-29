@@ -8,65 +8,92 @@
     <title>Marenfra</title>
 </head>
 <body>
-    <div class="header">
-        <ul class="hlist" style="list-style: none;">
-            <li>Marenfra</li>
-            <li>Morocco</li>
-            <li>America</li>
-            <li>France</li>
-        </ul>
+    <div class="header" style="background-color: rgb(44, 147, 137); display: flex;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <img class="mlo" src="mlogo.jpeg">
+            <h2 margin-left: 20px;>Marenfra</h2>
+        </div>
+        <div style="width: 900px; align-content: center;">
+            <ul class="hlist" style="list-style: none;">
+                <li><a href="/darija">Darija</a></li>
+                <li><a href="/english">English</a></li>
+                <li><a href="/french">French</a></li>
+            </ul>
+        </div>
+        <div class="dm" style="align-content: center;">
+            <li style="list-style: none;"><a href="/menu">MENU</a></li>
+            <div class="dml">
+                <li class="dmo">Sign-up</li>
+                <li class="dmo">Insights</li>
+                <li class="dmo">News</li>
+            </div>
+        </div>
     </div>
-    <div class="lang">
+    <div class="lang" style="padding-top: 10px; background-color: rgb(201, 187, 162);">
         <button class="lswitch" id="ar">AR</button>
         <button class="lswitch" id="en">EN</button>
         <button class="lswitch" id="fr">FR</button>
     </div>
-    <div class="scontain">
-        <div class="begin">
-            <h1>
-                Moroccan Arabic Dictionary 
-            </h1>
-            <h2 style="display: flex; justify-content: center;">
-                Darija - English - French
-            </h2>
-            <form style="display: flex; justify-content: center;">
-                <input type="search" name="search">
-                <input type="submit" name="Search">
-            </form>
-        </div>    
+    <div class="hbackground">
+        <div class="scontain">
+            <div class="begin">
+                <h1>
+                    Moroccan Arabic Dictionary 
+                </h1>
+                <h2 style="display: flex; justify-content: center;">
+                    Darija - English - French
+                </h2>
+                <form style="display: flex; justify-content: center;">
+                    <input type="search" name="search">
+                    <input type="submit" name="Search" value="Search">
+                </form>
+            </div>    
+        </div>
     </div>
     <div class="lbody">
         <div class="middle">
             <div style="display: flex; justify-content: center;">
-                <h1 style="width: 125px;">  
+                <h1>  
                     LOG-IN
                 </h1>
             </div>
             <form>
-                <div>
+                <div style="display: flex; justify-content: space-between;">
                     <label>Username: </label>
                     <input type="text" name="username">
                 </div>
-                <div>    
+                <div style="display: flex; justify-content: space-between;">    
                     <label>Password: </label>
                     <input type="text" name="password">
                 </div>
-                <input type="submit" name="Log-In">
+                <div style="text-align: center;">
+                    <div style="margin: 10px;">
+                        <input type="checkbox" name="checkbox">
+                        <label>Remember Me</label>
+                    </div>
+                    <div>
+                        <a href="/forgot">Forgot Password?</a>
+                    </div>
+                    <input style="font-size: 15pt; margin-top: 10px; margin-bottom: 10px;" type="submit" name="Log-In" value="Log-In">
+                </div>
+
             </form>
         </div>
     </div>
     <div class="ibody">
         <div class="end">
-            <div>
+            <div class="asec">
                 <h3><a href="/aboutus">About Us</a></h3>
                 <h3><a href="/privacypolicy">Privacy Policy</a></h3>
                 <h3><a href="/t&m">Terms and Conditions</a></h3>
                 <h3><a href="/copyright">Copyright Notice</a></h3>
                 <h3><a href="/contactus">Contact Us</a></h3>
             </div>
-            <div>
-                <h3>Copyright 2022-2024 Marenfra</h3>
-                <p>All rights reserved</p>
+            <div class="cr">
+                <div>
+                    <h3>Copyright 2022-2024 Marenfra</h3>
+                    <p style="text-align: center;">All rights reserved</p>
+                </div>
             </div>
         </div>
     </div>
