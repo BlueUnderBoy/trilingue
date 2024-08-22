@@ -31,6 +31,8 @@ bdiv.setAttribute("id", "bdiv")
 limage.setAttribute("id", "limage")
 limage.setAttribute("src", "mlogo.jpeg")
 limage.setAttribute("alt", "Marenfra Logo")
+aldiv.setAttribute("id", "aldiv")
+lmessage.setAttribute("id", "lmessage")
 lheader.setAttribute("id", "lheader")
 tdiv.setAttribute("id", "tdiv")
 ltitle.setAttribute("id", "ltitle")
@@ -53,11 +55,13 @@ linputvpw.setAttribute("id", "linputvpw")
 linputsub.setAttribute("id", "linputsub")
 linputsub.setAttribute("type", "submit")
 linputsub.setAttribute("name", "Register")
+linputsub.setAttribute("value", "Register")
 
 
 su.addEventListener("click", function(){
     reg.appendChild(loreg)
     loreg.appendChild(bdiv)
+    loreg.appendChild(lmessage)
     loreg.appendChild(tdiv)
     loreg.appendChild(lcont)
     lcont.appendChild(lform)
@@ -84,13 +88,16 @@ su.addEventListener("click", function(){
     labelem.innerHTML = "Email"
     labelpw.innerHTML = "Password"
     labelvpw.innerHTML = "Verify Password"
-    console.log(loreg.textContent)
     loreg.style.setProperty("position", "absolute")
     loreg.style.setProperty("background-color", "white")
     loreg.style.setProperty("width", "500px")
-    loreg.style.setProperty("height", "500px")
+    loreg.style.setProperty("height", "550px")
     ltitle.style.setProperty("width", "300px")
-    
+    linputun.style.setProperty("margin-bottom", "10px")
+    linputem.style.setProperty("margin-bottom", "10px")
+    linputpw.style.setProperty("margin-bottom", "10px")
+    linputvpw.style.setProperty("margin-bottom", "10px")
+
     //CSS
     let cont_css = document.querySelector("#lcont")
     cont_css.style.setProperty("display", "flex")
@@ -104,6 +111,8 @@ su.addEventListener("click", function(){
     let limage_css = document.querySelector("#limage")
     limage_css.style.setProperty("width", "100px")
 
+    let lmsg_css = document.querySelector("#lmessage")
+    lmsg_css.style.setProperty("height", "150px")
 
     let form_css = document.querySelector("#lform")
     form_css.style.setProperty("width", "370px")
@@ -111,7 +120,6 @@ su.addEventListener("click", function(){
     let title_css = document.querySelector("#tdiv")
     title_css.style.setProperty("display", "flex")
     title_css.style.setProperty("justify-content", "center")
-    
 
     let fdivun_css = document.querySelector("#fdivun")
     fdivun_css.style.setProperty("display", "flex")
