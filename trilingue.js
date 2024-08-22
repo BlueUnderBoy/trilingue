@@ -48,10 +48,15 @@ labelem.setAttribute("id", "labelem")
 labelpw.setAttribute("id", "labelpw")
 labelvpw.setAttribute("id", "labelvpw")
 linputun.setAttribute("id", "linputun")
+linputun.setAttribute("required", "true")
+linputun.setAttribute("name", "username")
 linputem.setAttribute("id", "linputem")
 linputem.setAttribute("type", "email")
+linputem.setAttribute("name", "email")
 linputpw.setAttribute("id", "linputpw")
+linputpw.setAttribute("name", "password")
 linputvpw.setAttribute("id", "linputvpw")
+linputvpw.setAttribute("name", "verification")
 linputsub.setAttribute("id", "linputsub")
 linputsub.setAttribute("type", "submit")
 linputsub.setAttribute("name", "Register")
@@ -142,4 +147,19 @@ su.addEventListener("click", function(){
     fdivsub_css.style.setProperty("justify-content", "center")
     
 });
+
+let registration = []
+
+linputpw.addEventListener("input", function(event){
+    const pw = event.target.value
+    console.log(pw)
+})
+
+linputvpw.addEventListener("input", function(event){
+    const vpw = event.target.value
+    if (vpw != pw) {
+        
+    }
+})
+
 
