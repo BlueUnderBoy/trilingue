@@ -148,18 +148,27 @@ su.addEventListener("click", function(){
     
 });
 
+const warning = document.createElement("li")
+let pw = ""
 let registration = []
 
 linputpw.addEventListener("input", function(event){
-    const pw = event.target.value
+    pw = event.target.value
     console.log(pw)
 })
 
 linputvpw.addEventListener("input", function(event){
     const vpw = event.target.value
     if (vpw != pw) {
-        
+        warning.innerHTML = "Password verification does not match!"
+        warning.style.setProperty("color", "red")
+        warning.style.setProperty("width", "350px")
+        console.log(warning)
+        lmessage.appendChild(warning)
     }
+    else{
+        lmessage.removeChild(warning)
+    }  
 })
 
 
