@@ -197,9 +197,9 @@ linputvpw.addEventListener("input", function(event){
 lform.addEventListener("submit", function(event){
     event.preventDefault();
     if (vpw == pw){
-    registration.push("${linputun}")
-    registration.push("${linputem}")
-    registration.push("${linputpw}")
+    registration.push(linputun.value)
+    registration.push(linputem.value)
+    registration.push(linputpw.value)
     }
     else {
         warning.innerHTML = "Password verification does not match!"
@@ -210,7 +210,15 @@ lform.addEventListener("submit", function(event){
     }
 
     for (i=0;i<registration.length;i++){
-        console.log(registration[i])
+        if (i==0){
+        console.log("Username: "+ registration[i])
+        }
+        else if (i==1){
+            console.log("Email: "+ registration[i])
+            }
+        else {
+            console.log("Password: "+ registration[i])
+            }
     }
 
 })
