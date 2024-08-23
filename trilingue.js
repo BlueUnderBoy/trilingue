@@ -53,10 +53,13 @@ linputun.setAttribute("name", "username")
 linputem.setAttribute("id", "linputem")
 linputem.setAttribute("type", "email")
 linputem.setAttribute("name", "email")
+linputem.setAttribute("required", "true")
 linputpw.setAttribute("id", "linputpw")
 linputpw.setAttribute("name", "password")
+linputpw.setAttribute("required", "true")
 linputvpw.setAttribute("id", "linputvpw")
 linputvpw.setAttribute("name", "verification")
+linputvpw.setAttribute("required", "true")
 linputsub.setAttribute("id", "linputsub")
 linputsub.setAttribute("type", "submit")
 linputsub.setAttribute("name", "Register")
@@ -150,6 +153,8 @@ su.addEventListener("click", function(){
 
 const warning = document.createElement("li")
 let pw = ""
+let vpw = ""
+let usn = ""
 let registration = []
 
 linputpw.addEventListener("input", function(event){
@@ -158,7 +163,7 @@ linputpw.addEventListener("input", function(event){
 })
 
 linputvpw.addEventListener("input", function(event){
-    const vpw = event.target.value
+    vpw = event.target.value
     if (vpw != pw) {
         warning.innerHTML = "Password verification does not match!"
         warning.style.setProperty("color", "red")
@@ -171,4 +176,19 @@ linputvpw.addEventListener("input", function(event){
     }  
 })
 
-
+lform.addEventListener("submit", function(event){
+    event.preventDefault();
+    if (vpw == pw){
+    registration.push("${linputun}")
+    registration.push("${linputem}")
+    registration.push("${linputpw}")
+    }
+    else {
+        warning.innerHTML = "Password verification does not match!"
+        warning.style.setProperty("color", "red")
+        warning.style.setProperty("width", "350px")
+        console.log(warning)
+        lmessage.appendChild(warning)
+    }
+    
+})
