@@ -1,1 +1,5 @@
-To view work for the SBA_316 please focus on files home.html, trilingue.js, and trilingue.css .
+To view work for the SBA_316 please focus on files home.html, trilingue.js, and trilingue.css. The necessary qualifications for the project can be visualized when hovering the "Menu" tab and then clicking on the "sign-up" option. 
+
+Welcome! Marenfra is an app to help french or english speakers learn Moroccan Arabic (Darija). The application is under construction but you soon will be able to navigate the website and learn various terms, phrases, and verbs in darija. I plan for this to be a great learning experience for me as well so I will be creating a suggestions feature to the application as well. 
+
+Bienvenue! Marenfra aidera les gens qui parlent francais ou anglais avec apprendre l'arabe Marocain (Darija). Maintenant, je construis l'application mais bientot vous verrez des changes et vous utiliserez le site-web et apprendrez les mots, phrases, et verbes de darija. Je planifierai pour cette expérience etre genial pour apprendre alors je construirai et ajouterai une functionnalité de recommender á l'application aussi.   
