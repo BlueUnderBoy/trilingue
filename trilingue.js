@@ -190,7 +190,7 @@ linputvpw.addEventListener("input", function(event){
         lmessage.appendChild(warning)
     }
     else{
-        lmessage.removeChild(warning)
+        bdiv.nextSibling.removeChild(warning)
     }  
 })
 
