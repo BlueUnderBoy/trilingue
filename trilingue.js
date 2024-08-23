@@ -2,6 +2,8 @@ let su = document.getElementById("su")
 let reg = document.getElementById("reg")
 
 let loreg = document.createElement("div")
+let cdiv = document.createElement("div")
+let cloreg = document.createElement("span")
 let bdiv = document.createElement("div")
 let limage = document.createElement("img")
 let lheader = document.createElement("h1")
@@ -27,6 +29,9 @@ let linputvpw = document.createElement("input")
 let linputsub = document.createElement("input")
 
 loreg.setAttribute("id", "loreg")
+cdiv.setAttribute("id", "cdiv")
+cloreg.setAttribute("class", "close")
+cloreg.setAttribute("id", "close")
 bdiv.setAttribute("id", "bdiv")
 limage.setAttribute("id", "limage")
 limage.setAttribute("src", "mlogo.jpeg")
@@ -65,9 +70,11 @@ linputsub.setAttribute("type", "submit")
 linputsub.setAttribute("name", "Register")
 linputsub.setAttribute("value", "Register")
 
-
 su.addEventListener("click", function(){
+    loreg.style.setProperty("display", "inline")
     reg.appendChild(loreg)
+    loreg.appendChild(cdiv)
+    cdiv.appendChild(cloreg)
     loreg.appendChild(bdiv)
     loreg.appendChild(lmessage)
     loreg.appendChild(tdiv)
@@ -90,6 +97,7 @@ su.addEventListener("click", function(){
     fdivpwv.appendChild(labelvpw)
     fdivpwv.appendChild(linputvpw)
     fdivsub.appendChild(linputsub)
+    cloreg.innerHTML = "&times;"
     lheader.innerHTML = "MARENFRA"
     ltitle.innerHTML = "Create a Marenfra account!"
     labelun.innerHTML = "Username"
@@ -100,6 +108,11 @@ su.addEventListener("click", function(){
     loreg.style.setProperty("background-color", "white")
     loreg.style.setProperty("width", "500px")
     loreg.style.setProperty("height", "550px")
+    cdiv.style.setProperty("display", "flex")
+    cdiv.style.setProperty("justify-content", "right")
+    cdiv.style.setProperty("height", "0")
+    cloreg.style.setProperty("margin-right", "10px")
+    cloreg.style.setProperty("font-size", "30px")
     ltitle.style.setProperty("width", "300px")
     linputun.style.setProperty("margin-bottom", "10px")
     linputem.style.setProperty("margin-bottom", "10px")
@@ -148,6 +161,11 @@ su.addEventListener("click", function(){
     let fdivsub_css = document.querySelector("#fdivsub")
     fdivsub_css.style.setProperty("display", "flex")
     fdivsub_css.style.setProperty("justify-content", "center")
+
+    cloreg.addEventListener("click", function(){
+        lform.reset()
+        loreg.style.setProperty("display", "none")
+    })
     
 });
 
@@ -190,5 +208,8 @@ lform.addEventListener("submit", function(event){
         console.log(warning)
         lmessage.appendChild(warning)
     }
-    
+
 })
+
+console.log(screen.width)
+console.log(screen.height)
